@@ -1,0 +1,37 @@
+idf_component_register(
+    SRCS
+        src/main.cpp
+        src/utils/config.cpp
+        src/utils/wifi_manager.cpp
+        src/utils/sd_manager.cpp
+        src/display/oled_display.cpp
+        src/display/lcd_display.cpp
+        src/ui/companion.cpp
+        src/ui/animation.cpp
+        src/buttons/button_handler.cpp
+        src/cloud/whisper_api.cpp
+        src/cloud/gemini_api.cpp
+        src/cloud/elevenlabs_api.cpp
+        src/alarm/alarm_system.cpp
+        src/alarm/alarm_ringtone.cpp
+        src/bluetooth/bt_manager.cpp
+        src/bluetooth/bt_speaker.cpp
+        src/bluetooth/bt_voice_chat.cpp
+    INCLUDE_DIRS
+        src
+        src/utils
+        src/display
+        src/ui
+        src/buttons
+        src/cloud
+        src/alarm
+        src/bluetooth
+    PRIV_REQUIRES
+        driver
+        spi_flash
+        esp_timer
+        freertos
+        lwip
+        fatfs
+        esp_https_ota
+)

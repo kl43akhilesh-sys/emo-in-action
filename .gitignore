@@ -1,0 +1,40 @@
+# Build artifacts
+build/
+dist/
+*.o
+*.a
+*.so
+*.pyc
+__pycache__/
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Credentials
+config.env
+.env
+api_keys.json
+wifi_credentials.txt
+
+# PlatformIO
+.pio/
+.platformio/
+
+# Python
+venv/
+env/
+*.egg-info/
+
+# Firmware
+.buildpath/
+.project
+
+# Cache
+.cache/
+*.cache
